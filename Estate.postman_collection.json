@@ -1,0 +1,214 @@
+{
+	"info": {
+		"_postman_id": "4668ea64-4289-4a06-9de8-d75f9064c012",
+		"name": "Estate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7017251"
+	},
+	"item": [
+		{
+			"name": "register Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n {\n            \"name\": \"Departamento · 90m² · 2 recámaras\",\n            \"phoneNumber\": \"5563784590\",\n            \"address\": \"ACOGEDORA MÉRIDA 215. ROMA NORTE, CDMX\",\n            \"description\": \"Acogedor departamento amueblado y equipado, listo para habitarse. 90 mts2 en primer piso (interior), estancia, comedor, cocina integral con filtro de agua, 2 recamaras con amplios closets, 2 baños completos. Área de lavado y tendido en azotea, Centro de lavado interior (incluido). Sin elevador, sin estacionamiento. Se aceptan mascotas razas pequeñas. Incluye mantenimiento.\",\n            \"uri\": \"https://www.inmuebles24.com/propiedades/clasificado/alclapin-departamento-roma-norte-143905459.html\"\n}\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/estate/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estate",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "registerLst Copy",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n [{\n            \"name\": \"Departamento · 90m² · 2 recámaras\",\n            \"phoneNumber\": \"5563784590\",\n            \"address\": \"ACOGEDORA MÉRIDA 215. ROMA NORTE, CDMX\",\n            \"description\": \"Acogedor departamento amueblado y equipado, listo para habitarse. 90 mts2 en primer piso (interior), estancia, comedor, cocina integral con filtro de agua, 2 recamaras con amplios closets, 2 baños completos. Área de lavado y tendido en azotea, Centro de lavado interior (incluido). Sin elevador, sin estacionamiento. Se aceptan mascotas razas pequeñas. Incluye mantenimiento.\",\n            \"uri\": \"https://www.inmuebles24.com/propiedades/clasificado/alclapin-departamento-roma-norte-143905459.html\"\n},\n {\n            \"name\": \"Departamentos en Renta Polanco\",\n            \"phoneNumber\": \"5565684590\",\n            \"address\": \"Andrómaco 9, Amp Granada, Miguel Hidalgo, 11529 Ciudad de México, CDMX, Polanco, Miguel Hidalgo\",\n            \"description\": \"Renta de departamentos en Polanco. En una de las zonas más conectadas de la Ciudad de México, 5 minutos de Periférico, Río San Joaquín, Ejército Nacional, Masaryk y a menos de 10 minutos de Reforma y Av. Chapultepec.Sin aval, sin Fianza. Renta fácil en 24 horas.Amenidades incomparables, ven y conoce la diferencia de un edificio profesionalmente administrado.\",\n            \"uri\": \"https://www.inmuebles24.com/propiedades/desarrollo/ememvein-departamentos-en-renta-polanco-143900343.html\"\n}]\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/estate/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estate",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getinformation Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/estate/getEstates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"estate",
+						"getEstates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getbyID Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/devhive/estate/91782e80-11ba-45d6-8a6b-a4848a32f188",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"devhive",
+						"estate",
+						"91782e80-11ba-45d6-8a6b-a4848a32f188"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateEstate Copy",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n {\n            \"name\": \"Departamento · 120m² · 2 recámaras\",\n            \"phoneNumber\": \"5563784590\",\n            \"address\": \"ACOGEDORA MÉRIDA 215. ROMA NORTE, CDMX\",\n            \"description\": \"Acogedor departamento amueblado y equipado, listo para habitarse. 90 mts2 en primer piso (interior), estancia, comedor, cocina integral con filtro de agua, 2 recamaras con amplios closets, 2 baños completos. Área de lavado y tendido en azotea, Centro de lavado interior (incluido). Sin elevador, sin estacionamiento. Se aceptan mascotas razas pequeñas. Incluye mantenimiento.\",\n            \"uri\": \"https://www.inmuebles24.com/propiedades/clasificado/alclapin-departamento-roma-norte-143905459.html\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/devhive/update/f2826a1b-6a89-46e4-9b9d-164bdc147c65",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"devhive",
+						"update",
+						"f2826a1b-6a89-46e4-9b9d-164bdc147c65"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove Copy",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\n {\n            \"name\": \"Departamento · 120m² · 2 recámaras\",\n            \"phoneNumber\": \"5563784590\",\n            \"address\": \"ACOGEDORA MÉRIDA 215. ROMA NORTE, CDMX\",\n            \"description\": \"Acogedor departamento amueblado y equipado, listo para habitarse. 90 mts2 en primer piso (interior), estancia, comedor, cocina integral con filtro de agua, 2 recamaras con amplios closets, 2 baños completos. Área de lavado y tendido en azotea, Centro de lavado interior (incluido). Sin elevador, sin estacionamiento. Se aceptan mascotas razas pequeñas. Incluye mantenimiento.\",\n            \"uri\": \"https://www.inmuebles24.com/propiedades/clasificado/alclapin-departamento-roma-norte-143905459.html\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/devhive/remove/f2826a1b-6a89-46e4-9b9d-164bdc147c65",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"devhive",
+						"remove",
+						"f2826a1b-6a89-46e4-9b9d-164bdc147c65"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
