@@ -13,8 +13,7 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>EstateInformation</name>
 	<description>application web with springboot and PostgreSQL as database</description>
-	<url/>
-	<licenses>
+	<url/><licenses>
 		<license/>
 	</licenses>
 	<developers>
@@ -69,6 +68,15 @@
 	<build>
 		<plugins>
 			<plugin>
+			    <groupId>org.apache.maven.plugins</groupId>
+			    <artifactId>maven-compiler-plugin</artifactId>
+			    
+			    <configuration>
+			        <source>11</source>
+			        <target>11</target>
+			    </configuration>
+			</plugin>
+			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
@@ -80,6 +88,10 @@
 					</excludes>
 				</configuration>
 			</plugin>
+			
+			
+
+			
 		</plugins>
 	</build>
 
